@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+}
+
+body{
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    color: #495057;
+}
+
+.header{
+    padding: 1.5% 0% 0% 0%;
+}
+
+main{
+   gap: 3%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.seccion1{
+    width: 50%;
+}
+
+
+::placeholder{
+    color: #0A3871;
+}
+.texto:focus{
+    outline: none;
+}
+
+.texto{
+    background-color: #f4f4f4;
+    cursor: pointer;
+    text-transform: lowercase;
+    color: #0A3871;
+    font-size: 1rem;
+    height: 400px;
+    border: none;
+    resize: none;
+    padding: 10% 0px 10% 0%;
+}
+
+.alerta{
+    display: flex;
+    gap: 5px;
+}
+
+.alerta p{
+    font-size: 0.375rem;
+    padding-top: 2px;
+    color: #495057;
+}
+
+.iconoAlerta{
+    padding-top: 3px;
+    height: 12px;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+    gap: 1rem;
+}
+
+.botonEncriptar{
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.botonDesencriptar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.botonEncriptar:hover{
+    color: #0A3871;
+    background-color: #FFFFFF;
+    border:solid #0A3871 1px;
+}
+
+.botonDesencriptar:hover{
+    color: #0A3871;
+    background-color: #FFFFFF;
+    border:solid #0A3871 1px;
+}
+
+.seccion2{
+    background-color: #FFFFFF;
+    height: 944px;
+    width: 25%;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.campoMuneco{
+    text-align: center;
+    color: #343A40; 
+    font-size: 0.75rem;
+
+}
+
+.imgMuneco{
+    width: 80%;
+}
+
+.cajatexto2 h2{
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin-top: 32px;
+    padding: 5% 15% 5% 15%;
+    color: #343A40;
+}
+
+.cajatexto2 p{
+    font-size: 0.5rem;
+    padding: 0% 15%;
+}
+
+.cajadeResultado{
+    text-align: center;
+}
+
+.resultadoDesencriptado p{
+    color: #495057;
+    font-size: 0.75rem;
+    outline: none;
+    height: 680px;
+    resize: none;
+    border: none;
+}
+
+.botonCopiar{
+    width: 80%;
+    background-color: #FFFFFF;
+    color: #0A3871;
+    cursor: pointer;
+    border: 1px solid #0A3871;
+
+}
+
+button{
+    font-size: 0.5rem;
+    border: none;
+    border-radius: 24px;
+    width: 50%;
+    height: 67px;
+}
+
+
+/* Para Tablet*/
+
+@media (max-width:1080px){
+    main{
+        flex-direction: column;
+        height: 50%;
+    }
+
+    .header{
+        padding: 5% 0% 0% 0%;
+    }
+
+    .seccion1{
+        width: 80%;
+        height: 65%;
+    }
+
+    .texto{
+        width: 80%;
+    }
+
+    .botones{
+        justify-content: center;
+    }
+
+    .seccion2{
+        margin-top: 3%;
+        height: 680px;
+        width: 80%;
+    }
+
+    .imgMuneco{
+        display: none;
+    }
+
+    .cajatexto2 h2{
+        margin: 0;
+        padding-bottom: 0.25rem;
+        padding-top: 0.5rem;
+    }
+
+    .cajatexto2 p{
+        padding-bottom: 0.5rem;
+    }
+
+    .resultadoDesencriptado{
+        padding-bottom: 20px;
+        height: 480px;
+        padding-top: 20px;
+        width: 80%;
+    }
+
+    .botonCopiar{
+        margin-bottom: 20px;
+        font-size: 0.5rem;
+        width: 60%;
+        height: 12%;
+    }
+
+}
+
+/* Para Movil*/
+
+@media (max-width:520px){
+    main{
+        flex-direction: column;
+        height: 60%;
+    }
+
+    .header{
+        padding: 5% 0% 0% 0%;
+    }
+
+
+.seccion1{
+    width: 80%;
+    height: 65%;
+}
+
+.texto{
+    width: 80%;
+    font-size: 0.75rem;
+}
+
+.botones{
+    justify-content: center;
+}
+
+.seccion2{
+    height: 480px;
+    width: 80%;
+}
+
+.cajatexto2 h2{
+    margin: 0;
+    padding-bottom: 0.25rem;
+    padding-top: 0.5rem;
+    font-size: 0.5rem;
+}
+
+.cajatexto2 p{
+    padding-bottom: 0.5rem;
+    font-size: 0.5rem;
+}
+
+.resultadoDesencriptado{
+    padding-bottom: 10%;
+    padding-top: 10px;
+    width: 80%;
+    font-size: 0.5rem;
+    height: 320px;
+}
+
+.botonCopiar{
+    margin-bottom: 20px;
+    font-size: 0.5rem;
+    width: 60%;
+    height: 12%;
+}
+
+}

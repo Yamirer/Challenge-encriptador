@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="=IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Encriptador Challenge</title>
+</head>
+<body>
+    <header class="header">
+        <img class ="logo" src="Imgs/Logo.svg" alt="logoAlura">
+    </header>
+
+    <main>
+        <section class="seccion1">
+            <div class="cajaTexto">
+                <textarea class="texto" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+
+            <div class="alerta">
+                <img class="iconoAlerta" src="Imgs/aviso.svg" alt="iconoalerta">
+                <p>Solo letras minúsculas y sin acentos </p>
+            </div>
+
+            <div class="botones">
+                <button type="button" class="botonEncriptar" onclick="btnEncriptar ()">Encriptar</button>
+
+                <button type="button" class="botonDesencriptar" onclick="btnDesencriptar ()">Desencriptar</button>      
+            </div>
+        </section>
+
+
+        <section class="seccion2">
+            <div class="campoMuneco">
+                <img class= "imgMuneco" src="Imgs/Muneco.png" alt="imagenDeMuneco">
+            </div>
+
+            <div class="cajatexto2">
+                <h2>Ningún mensaje fué <br> encontrado</h2>
+                <p>Ingresa el texto que deseas encriptar o desencriptar. </p>
+            </div>
+
+            <div class="cajaDeResultado" style="display: none;">
+                <textarea class="resultadoDesencriptado" readonly="true"></textarea>
+                <button type="button" class="botonCopiar" onclick="copiarMensaje()">Copiar</button>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+    
+</body>
+</html>
